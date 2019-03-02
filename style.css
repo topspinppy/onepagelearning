@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Kanit', sans-serif;
 }
 
 section {
@@ -11,32 +12,69 @@ section {
     justify-content: center;
 }
 
-section h1 
-{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 5em;
-    color: #262626;
-    background: #fff;
-    padding: 10px;
-    text-shadow: 0 2px 5px rgba(0,0,0)
+.site-navbar {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    z-index: 1999;
+    position: absolute;
+    width: 100%;
 }
 
-section:nth-child(1)
+.logo-website
 {
-    background: wheat;
+    display: flex;
+} 
+
+.logo-website .logo {
+    margin: 20px;
+}
+
+.logo-website .name-faculty {
+    margin: 20px;
+    color: white;
+}
+
+
+.arrow-nav
+{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+}
+
+.display-4 {
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
+}
+
+
+.scroll-wrap {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1em;
+    left: -3px;
 }
 
 section:nth-child(2)
 {
-    background: blue;
+    background-image: url('./img/fitm.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section:nth-child(3)
 {
-    background: yellow;
+    background: white;
 }
 
 section:nth-child(4)
@@ -47,4 +85,11 @@ section:nth-child(4)
 section:nth-child(5)
 {
     background: pink;
+    height: 90vh;
+}
+
+section:nth-child(6)
+{
+    background: orange;
+    height: 10vh;
 }
